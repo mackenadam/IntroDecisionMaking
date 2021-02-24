@@ -7,7 +7,7 @@ namespace IntroDecisionMaking
         static void Main(string[] args)
         {
             // Introduction to decision making in C#
-            // IF statements
+            // if/else/TryParse/nested if statements
             Console.WriteLine("Please enter the current outside temperature: ");
             string input = Console.ReadLine();
             int temperature;
