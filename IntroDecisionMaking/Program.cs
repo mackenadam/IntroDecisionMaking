@@ -7,12 +7,15 @@ namespace IntroDecisionMaking
         static void Main(string[] args)
         {
             // Introduction to decision making in C#
+            // IF statements
             Console.WriteLine("Please enter the current outside temperature: ");
             string input = Console.ReadLine();
             int temperature;
-            try
+
+            bool parseSuccess = int.TryParse(input, out temperature);
+            if(parseSuccess)
             {
-                temperature = Int32.Parse(input);
+                Console.WriteLine("Parsing successful");
                 Console.WriteLine("The temperature is: {0} degrees.", temperature);
                 if (temperature > 20)
                 {
@@ -29,13 +32,10 @@ namespace IntroDecisionMaking
                     Console.WriteLine("It's not too hot, and not too cold. Make sure you have a jacket because it could go either way.");
                 }
             }
-            catch(Exception)
+            else
             {
-                Console.WriteLine("Sorry, there was a problem recognising your input. Please enter the temperature as a number.");
+                Console.WriteLine("Sorry, parsing failed. There was a problem recognising your input. Please enter the temperature as a number.");
             }
-
-
-           
         }
     }
 }
