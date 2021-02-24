@@ -17,17 +17,13 @@ namespace IntroDecisionMaking
             {
                 Console.WriteLine("Parsing successful");
                 Console.WriteLine("The temperature is: {0} degrees.", temperature);
-                if (temperature > 20)
+                if(temperature > 20)
                 {
                     Console.WriteLine("It's warm out, stay hydrated.");
-                }
-
-                if (temperature < 10)
+                }else if(temperature < 10)
                 {
                     Console.WriteLine("It's a bit chilly out there. Might want an extra layer.");
-                }
-
-                if (temperature >= 10 && temperature <= 20)
+                }else
                 {
                     Console.WriteLine("It's not too hot, and not too cold. Make sure you have a jacket because it could go either way.");
                 }
