@@ -6,7 +6,7 @@ namespace IntroDecisionMaking
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Introduction to decision making in C#
         }
     }
 }
