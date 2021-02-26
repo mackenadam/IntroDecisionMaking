@@ -36,8 +36,9 @@ namespace IntroDecisionMaking
             // Part 2 - more nested if loop
             bool isAdmin = false;
             bool isRegistered = true;
-            string userName = "";
-
+            string userName;
+            Console.WriteLine("Please enter your username.");
+            userName = Console.ReadLine();
             if (isRegistered)
             {
                 if (isAdmin)
