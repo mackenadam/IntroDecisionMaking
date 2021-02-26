@@ -32,6 +32,29 @@ namespace IntroDecisionMaking
             {
                 Console.WriteLine("Sorry, parsing failed. There was a problem recognising your input. Please enter the temperature as a number.");
             }
+
+            // Part 2 - more nested if loop
+            bool isAdmin = false;
+            bool isRegistered = true;
+            string userName = "";
+
+            if (isRegistered)
+            {
+                if (isAdmin)
+                {
+                    Console.WriteLine("Hi there, Admin.");
+                } else
+                {
+                    if (userName != "")
+                    {
+                        Console.WriteLine("Hi there, {0}.", userName);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Hi there, registered user.");
+                    }
+                }
+            }
         }
     }
 }
